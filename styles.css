@@ -1,0 +1,311 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Mode (default) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff; /* Light background */
+    color: #222; /* Dark text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222; /* Dark background */
+    color: #fff; /* Light text color */
+}
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+    padding: 8px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #f05454;
+    color: #fff;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 24px;
+    color: #f05454;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #f05454;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 80px 30px;
+    transition: background-color 0.3s;
+}
+.hero-image {
+    display: flex; /* Use flex to align items */
+    justify-content: flex-end; /* Align content to the end (right) */
+    flex: 1; /* Allow image section to take remaining space */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+/* Light mode for hero */
+body:not(.dark-mode) .hero {
+    background: #f9f9f9;
+}
+
+/* Dark mode for hero */
+body.dark-mode .hero {
+    background: #222;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #f05454;
+}
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #bd1414;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background: #f05454;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #333;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #f05454;
+    border: 2px solid #f05454;
+}
+
+.btn-secondary:hover {
+    background: #f05454;
+    color: #fff;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+    padding: 60px 30px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f05454; /* Consistent color for headings */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 30px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f05454; /* Consistent color for headings */
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: inherit; /* Inherit background color for dark mode */
+    color: inherit; /* Inherit text color for dark mode */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button {
+    background-color: #f05454;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Space between each icon */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;  /* Icon container size */
+    height: 40px; /* Icon container size */
+    border-radius: 50%;
+    background-color: #333; /* Default background color for icons */
+    color: #fff; /* Default icon color */
+    font-size: 20px; /* Icon size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* Individual icon hover styles */
+.social-icons a.linkedin:hover {
+    background-color: #0077b5; /* LinkedIn color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons a.github:hover {
+    background-color: #333; /* GitHub color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons a.twitter:hover {
+    background-color: #1da1f2; /* Twitter color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons a.telegram:hover {
+    background-color: #0088cc; /* Telegram color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons a.instagram:hover {
+    background-color: #e1306c; /* Instagram color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons a.dev:hover {
+    background-color: #0a0a0a; /* Dev.to color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Dark mode support */
+body.dark-mode .social-icons a {
+    background-color: #555; /* Dark mode icon background */
+}
+
+body.dark-mode .social-icons a:hover {
+    transform: scale(1.1); /* Keep hover effect in dark mode */
+}

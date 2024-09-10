@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>HELLO! </h1>
+            <h2> I Am Yashas</h2>
+            <p>I'm an AI Engineering student. Currently I am studying in 3rd year of New Horizon College of Engineering Bangalore.</p>
+            <div class="hero-buttons">          
+                <ul class="social-icons">
+                  <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/yashas-shetty-666876243/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                  <li><a class="github" aria-label="GitHub" href="https://github.com/yashas2604" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/yashas2604" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/yashas.m.shetty" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="yashaspic.jpg" alt="My Profile Picture">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Yashas, a passionate AI Engineering student with a knack for creating innovative solutions using the power of technology. I love learning new things, especially in the fields of web development, artificial intelligence, and data science. My journey has been filled with exciting projects and collaborations, helping me grow both professionally and personally.</p>
+        <p>I'm always eager to connect with like-minded individuals, work on challenging projects, and contribute to the tech community. Let's create something amazing together!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, opportunities, or would like to collaborate, feel free to reach out!</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- Include other sections as needed -->
+    <script src="script.js"></script>
+</body>
+</html>
