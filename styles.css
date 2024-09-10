@@ -1,25 +1,22 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Light Mode (default) */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #fff; /* Light background */
-    color: #222; /* Dark text color */
+    background-color: #fff; 
+    color: #222; 
     transition: background-color 0.3s, color 0.3s;
 }
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #222; /* Dark background */
-    color: #fff; /* Light text color */
+    background-color: #222; 
+    color: #fff; 
 }
 
-/* Dark Mode Toggle Button Styles */
 .dark-mode-toggle {
     padding: 8px 15px;
     background: #333;
@@ -35,7 +32,6 @@ body.dark-mode {
     color: #fff;
 }
 
-/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -78,7 +74,6 @@ body.dark-mode {
     border-radius: 4px;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -88,21 +83,20 @@ body.dark-mode {
     transition: background-color 0.3s;
 }
 .hero-image {
-    display: flex; /* Use flex to align items */
-    justify-content: flex-end; /* Align content to the end (right) */
-    flex: 1; /* Allow image section to take remaining space */
+    display: flex; 
+    justify-content: flex-end; 
+    flex: 1; 
 }
 
 .hero-content {
     max-width: 50%;
 }
 
-/* Light mode for hero */
+
 body:not(.dark-mode) .hero {
     background: #f9f9f9;
 }
 
-/* Dark mode for hero */
 body.dark-mode .hero {
     background: #222;
 }
@@ -177,7 +171,7 @@ body.dark-mode .hero {
 .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #f05454; /* Consistent color for headings */
+    color: #f05454; 
 }
 
 .about p {
@@ -188,7 +182,6 @@ body.dark-mode .hero {
     margin-bottom: 20px;
 }
 
-/* Contact Section */
 .contact {
     padding: 60px 30px;
     text-align: center;
@@ -198,7 +191,7 @@ body.dark-mode .hero {
 .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #f05454; /* Consistent color for headings */
+    color: #f05454; 
 }
 
 .contact p {
@@ -222,8 +215,8 @@ body.dark-mode .hero {
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
-    background-color: inherit; /* Inherit background color for dark mode */
-    color: inherit; /* Inherit text color for dark mode */
+    background-color: inherit; 
+    color: inherit; 
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -242,14 +235,13 @@ body.dark-mode .hero {
     background-color: #333;
     color: #fff;
 }
-/* Social Media Icons */
 .social-icons {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 15px; /* Space between each icon */
-    justify-content: center; /* Center the icons */
-    margin-top: 20px; /* Adjust spacing as needed */
+    gap: 15px; 
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .social-icons li {
@@ -260,52 +252,45 @@ body.dark-mode .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;  /* Icon container size */
-    height: 40px; /* Icon container size */
+    width: 40px; 
+    height: 40px; 
     border-radius: 50%;
-    background-color: #333; /* Default background color for icons */
-    color: #fff; /* Default icon color */
-    font-size: 20px; /* Icon size */
+    background-color: #333; 
+    color: #fff; 
+    font-size: 20px; 
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
 }
 
-/* Individual icon hover styles */
 .social-icons a.linkedin:hover {
-    background-color: #0077b5; /* LinkedIn color */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #0077b5; 
+    transform: scale(1.1); 
 }
 
 .social-icons a.github:hover {
-    background-color: #333; /* GitHub color */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #333; 
+    transform: scale(1.1); 
 }
 
 .social-icons a.twitter:hover {
-    background-color: #1da1f2; /* Twitter color */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #1da1f2; 
+    transform: scale(1.1); 
 }
 
-.social-icons a.telegram:hover {
-    background-color: #0088cc; /* Telegram color */
-    transform: scale(1.1); /* Slight zoom effect */
-}
+
 
 .social-icons a.instagram:hover {
-    background-color: #e1306c; /* Instagram color */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #e1306c; 
+    transform: scale(1.1); 
 }
 
-.social-icons a.dev:hover {
-    background-color: #0a0a0a; /* Dev.to color */
-    transform: scale(1.1); /* Slight zoom effect */
-}
+
 
 /* Dark mode support */
 body.dark-mode .social-icons a {
-    background-color: #555; /* Dark mode icon background */
-}
+    background-color: #555; 
 
 body.dark-mode .social-icons a:hover {
-    transform: scale(1.1); /* Keep hover effect in dark mode */
+    transform: scale(1.1); 
+}
 }
